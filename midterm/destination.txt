@@ -1,4 +1,1 @@
-2inux
-3idterm
-:est
-
+HELLO WORLD GOODBYE

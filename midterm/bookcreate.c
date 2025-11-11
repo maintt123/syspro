@@ -17,10 +17,10 @@ int main(int argc, char* argv[]){
 		exit(2);
 	}
 
-	printf("%-4s %-12s %-12s %-15s %-18s %-11s", "id", "bookname", "author", "yesr", "numofborrow", "borrow");
+	printf("%-4s %-12s %-12s %-15s %-18s %-11s\n", "id", "bookname", "author", "year", "numofborrow", "borrow");
 	while(scanf("%d %s %s %d %d %d", &record.id, &record.name, &record.author, &record.year, &record.numofborrow, &record.borrow) == 6){
 		lseek(fd, (record.id - START_ID) * sizeof(record), SEEK_SET);
-		write(fd, (char*)&record, sizeof(record));
+		write(fd, (char *)&record, sizeof(record));
 	}
 
 	close(fd);

@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 	else if(!strcmp(argv[1], "1")){
 		while((c = fgetc(fp1)) != EOF){
 			if((c >= 'A') && (c <= 'Z')){
-				c = c - 26;
+				c = c + 32;
 			}
 			fputc(c, fp2);
 		}
@@ -33,7 +33,7 @@ int main(int argc, char* argv[]){
 	else if(!strcmp(argv[1], "2")){
 		while((c = fgetc(fp1)) != EOF){
 			if((c <= 'z') && (c >= 'a')){
-				c = c + 26;
+				c = c - 32;
 			}
 			fputc(c, fp2);
 		}
