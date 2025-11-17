@@ -6,7 +6,6 @@
 
 int main(int argc, char *argv[]){
 	int fd, id;
-	char c;
 	struct book record;
 	int queryFlag; //0: list all books, 1: list available books
 

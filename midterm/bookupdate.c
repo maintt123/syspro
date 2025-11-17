@@ -7,7 +7,6 @@
 int main(int argc, char *argv[]){
 	int fd, id;
 	int bookId;
-	char c;
 	struct book record;
 	int borrowFlag;
 
