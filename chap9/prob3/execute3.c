@@ -13,6 +13,6 @@ int main(int argc, char *argv[]){
 	else{
 		child = wait(&status);
 		printf("[%d] child process %d end\n", getpid(), pid);
-		printf("\t end code %d\n", status>>8);
+		printf("\tend code %d\n", status>>8);
 	}
 }
